@@ -588,17 +588,21 @@ transform: translateX(20px); /* Moves the content 20px to the right */
     text-shadow: none; /* Remove shadow from the highlighted part */
 }
 
-
-
+/* For mobile responsiveness */
 @media screen and (max-width: 768px) {
     .ast_bannertext_wrapper h1 {
-        font-size: 40px;
-        margin-top: -196px;
+        font-size: 40px; /* Adjust the size for mobile */
+        margin-top: 20px;
     }
 }
 
 
-
+/* Mobile View Adjustments */
+@media screen and (max-width: 768px) {
+    .ast_bannertext_wrapper h1 {
+        margin-right: 35px; /* Add right margin for mobile */
+    }
+}
 
 
 .ast_bannertext_wrapper ul {
@@ -651,10 +655,13 @@ transform: translateX(20px); /* Moves the content 20px to the right */
     .ast_bannertext_wrapper {
         clear: both; /* Ensures content doesn't overlap */
         text-align: center; 
-        margin-top: 415px; /* Increased margin-top to move content further down */
+        margin-top: 300px; /* Increased margin-top to move content further down */
     }
 
-   
+    .ast_bannertext_wrapper h1 {
+        font-size: 40px; /* Adjust font size for mobile */
+        margin-top: 20px;
+    }
 
     .ast_bannertext_wrapper ul li {
         font-size: 18px; /* Adjust font size for mobile */
@@ -4110,7 +4117,7 @@ transform: translateX(20px); /* Moves the content 20px to the right */
 @media (max-width: 479px) {
 .ast_comment_text {
     width: 100%;
-    margin-top:-135px;
+    margin-top: 15px;
 }
 .ast_main_menu_wrapper {
     width: 240px;
@@ -4162,7 +4169,7 @@ transform: translateX(20px); /* Moves the content 20px to the right */
     padding: 100px 0px;
 }
 .ast_bannertext_wrapper h1 {
-    margin: -135px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     font-size: 36px;
 }
 .ast_bannertext_wrapper ul li {
