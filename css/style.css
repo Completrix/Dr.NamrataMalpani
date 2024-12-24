@@ -508,20 +508,6 @@ input:focus, textarea:focus, select:focus, button:focus {
     background-position: center top; /* Default for desktop, starts from the center horizontally and top vertically */
 }
 
-/* Mobile and Tablet Views */
-@media screen and (max-width: 768px) {
-    .ast_slider_wrapper {
-        background-position: center top; /* Ensures the image cuts from the top */
-        background-size: auto 100%; /* Ensures the image maintains its aspect ratio and fits the height */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .ast_slider_wrapper {
-        background-position: center top; /* Ensures the image cuts from the top */
-        background-size: auto 100%; /* Ensures the image maintains its aspect ratio and fits the height */
-    }
-}
 
 
 
@@ -593,16 +579,12 @@ transform: translateX(20px); /* Moves the content 20px to the right */
     .ast_bannertext_wrapper h1 {
         font-size: 40px; /* Adjust the size for mobile */
         margin-top: 20px;
+        margin-right: 35px; 
     }
 }
-
-
-/* Mobile View Adjustments */
-@media screen and (max-width: 768px) {
-    .ast_bannertext_wrapper h1 {
-        margin-right: 35px; /* Add right margin for mobile */
-    }
-}
+/* (media-query of header and content) */
+/* ------------------------------------------------------------------------ */
+/* -------------------------------------------------------------------------- */
 
 
 .ast_bannertext_wrapper ul {
@@ -5555,6 +5537,69 @@ li.ast_search , li.ast_cart{
 
 }						
 
+/* For Tablets and Larger Devices (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .ast_slider_wrapper {
+        background-position: center top; /* Ensures the image cuts from the top */
+        background-size: auto 100%; /* Ensures the image maintains its aspect ratio and fits the height */
+    }
+
+    .ast_bannertext_wrapper {
+        margin-top: 0 !important; /* Removes the extra margin for all tablets */
+    }
+
+    .ast_header_bottom {
+        margin-top: 0 !important; /* Removes the extra margin for all tablets */
+    }
+}
+
+/* For Phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .ast_slider_wrapper {
+        background-position: center top; /* Ensures the image cuts from the top */
+        background-size: auto 100%; /* Ensures the image maintains its aspect ratio and fits the height */
+    }
+
+    .ast_bannertext_wrapper {
+        margin-top: 0 !important; /* Removes the extra margin for all phones */
+    }
+
+    .ast_header_bottom {
+        margin-top: 0 !important; /* Removes the extra margin for all phones */
+    }
+}
+
+/* For iPhone SE and other smaller devices (max-width: 375px) */
+@media screen and (max-width: 375px) {
+    .ast_slider_wrapper {
+        background-position: center top; /* Ensures the image cuts from the top */
+        background-size: auto 100%; /* Ensures the image maintains its aspect ratio and fits the height */
+    }
+
+    .ast_bannertext_wrapper {
+        margin-top: 0 !important; /* Removes the extra margin for small phones like iPhone SE */
+    }
+
+    .ast_header_bottom {
+        margin-top: 0 !important; /* Removes the extra margin for small phones like iPhone SE */
+    }
+}
+
+/* For Small Phones, such as iPhone 5 and older (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .ast_slider_wrapper {
+        background-position: center top; /* Ensures the image cuts from the top */
+        background-size: auto 100%; /* Ensures the image maintains its aspect ratio and fits the height */
+    }
+
+    .ast_bannertext_wrapper {
+        margin-top: 0 !important; /* Removes the extra margin for very small phones */
+    }
+
+    .ast_header_bottom {
+        margin-top: 0 !important; /* Removes the extra margin for very small phones */
+    }
+}
 
 /*================Responsive Style==================*/
 /*@media(max-width:575px){
